@@ -30,8 +30,8 @@
 }
 
 .header__title {
-  width: 730px;
-  margin-left: 64px;
+  max-width: 730px;
+  margin: 0 0 0 64px;
   z-index: 4;
   line-height: 96px;
   font-size: 102px;
@@ -39,7 +39,8 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  margin: 0;
+  max-width: 388px;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -47,10 +48,16 @@
   font-size: 18px;
   font-weight: normal;
   z-index: 3;
+  }
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+  margin: 0;
 }
 
-.header_link {
-  color: #2f80ed;
+.header__link:hover {
+  text-decoration: underline;
 }
 
 .header__main-illustration {
@@ -86,7 +93,7 @@
   width: 80%;
 }
 
-.two-columns__breef {
+.two-columns__brief {
   flex-direction: column;
   width: 175px;
   line-height: 1.2;
